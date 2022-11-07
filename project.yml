@@ -1,0 +1,23 @@
+parameters: {}
+environment: {}
+packages:
+  - name: sample
+    environment: {}
+    parameters: {}
+    actions:
+      - name: hello
+        main: ''
+        runtime: 'go:1.17'
+        environment:
+          WELCOME_GREETING: "Nice to meet you!"
+        parameters: {}
+  - name: badge
+    environment: {}
+    parameters: {}
+    actions:
+      - name: entrypoint
+        main: ''
+        runtime: 'go:1.17'
+        environment:
+          WELCOME_GREETING: "Nice to meet you!"
+        parameters: {}
